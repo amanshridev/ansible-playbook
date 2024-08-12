@@ -1,0 +1,7 @@
+--- #yml entery point
+- name: First Playbook #playbook name
+  hosts: localhost #give the host name in which you want to perfom the task
+
+  task: #your task starts from here
+  - name: Ping the localhost #Give the main task name
+    ping: #module or task cmd 
