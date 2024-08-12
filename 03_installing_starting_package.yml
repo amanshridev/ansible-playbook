@@ -1,0 +1,15 @@
+---
+- name: Installing and Starting a package
+  hosts: lacalhost
+
+  task:
+  - name: Installing package
+    yum: #installer name
+      name: nigix #package name
+      state: present #crossverifying the package is install or not
+
+  - name: Starting
+    service:
+      name: nginx
+      state: started
+      enable: true
