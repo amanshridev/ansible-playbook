@@ -1,0 +1,13 @@
+---
+- name: Coping files from one to another
+  hosts: target ip
+
+  task:
+  - name: Coping file
+    copy:
+      src: /root/filename
+      dest: /temp/
+      owner: owner name #to change owner
+      group: group name #to change group
+      mode: 0777 #to change permission
+      backup: true #to taking backup of the file

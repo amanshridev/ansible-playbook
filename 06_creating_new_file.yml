@@ -1,0 +1,8 @@
+---
+- name: Creating file
+  hosts: host name
+
+  task: 
+  - name: Create a file
+    path: /root/new.txt
+    state: touch
